@@ -2,6 +2,16 @@
 
 ## Connector
 
+### Customize connection parameters in core/__init__.py
+
+    db = Db(
+        host="localhost",
+        port=5984,
+        database='test',
+        username='admin',
+        password='password'
+    )
+
 ### Set revision limits
     db.set_rev_limit(100)
 
